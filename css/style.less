@@ -91,13 +91,204 @@ main {
 			font-weight: lighter;
 			color: #b4ad9e;
 			text-transform: uppercase;
+		}
+	}
 
+	.middle-post {
+		width: 900px;
+		margin-top: 131px;
+		margin-left: auto;
+		margin-right: auto;
+
+		.post:nth-child(odd){
+			float: left;
+		}
+
+		.post:nth-child(even){
+			float: right;
+		}
+
+		.post {
+			width: 420px;
+			margin-bottom: 66px;
+
+			.post-category {
+				display: inline-block;
+				margin-top: 25px;
+				font-family: 'Ubuntu', sans-serif;
+				font-size: 14px;
+				font-weight: lighter;
+				color: #b4ad9e;
+				text-transform: uppercase;
+			}
+
+			h2 {
+				margin: 0px;
+				margin-top: 17px;
+				font-size: 30px;
+				font-weight: normal;
+				color: #626262;
+			}
+
+			p {
+				margin: 0px;
+				margin-top: 27px;
+				margin-bottom: 41px;
+				font-size: 14px;
+				font-weight: normal;
+				line-height: 24px;
+				color: #626262;
+			}
+
+			.post-comment {
+				font-family: 'Ubuntu', sans-serif;
+				font-size: 14px;
+				font-weight: lighter;
+				color: #b4ad9e;
+				text-transform: uppercase;
+			}
+		}
+	}
+
+	.feedback {
+		margin-top: -11px;
+		background: #f0f0f0;
+		text-align: center;
+		padding: 41px 88px 75px;
+		h2 {
+			font-size: 30px;
+			font-weight: normal;
+			color: #333;
+			letter-spacing: 1px;
+		}
+
+		input {
+			width: 400px;
+			margin-top: 49px;
+			background: #f0f0f0 url("../img/send.png") no-repeat 372px;
+			font-size: 14px;
+			line-height: 24px;
+			font-weight: normal;
+			border: none;
+			border-bottom: 1px solid black;
+			padding-bottom: 8px;
+			padding-left: 6px;
+			color: #626262; /*Почему то не работает!!!*/
+		}
+	}
+
+	.post-button {
+		width: 900px;
+		margin-top: 101px;
+		margin-left: auto;
+		margin-right: auto;
+
+		.post:nth-child(odd){
+			float: left;
+		}
+
+		.post:nth-child(even){
+			float: right;
+		}
+
+		.post {
+			width: 420px;
+			margin-bottom: 122px;
+
+			.post-category {
+				display: inline-block;
+				margin-top: 25px;
+				font-family: 'Ubuntu', sans-serif;
+				font-size: 14px;
+				font-weight: lighter;
+				color: #b4ad9e;
+				text-transform: uppercase;
+			}
+
+			h2 {
+				margin: 0px;
+				margin-top: 17px;
+				font-size: 30px;
+				font-weight: normal;
+				color: #626262;
+			}
+
+			p {
+				margin: 0px;
+				margin-top: 27px;
+				margin-bottom: 41px;
+				font-size: 14px;
+				font-weight: normal;
+				line-height: 24px;
+				color: #626262;
+			}
+		}
+
+		button {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			padding: 17px 33px;
+			font-size: 20px;
+			line-height: 24px;
+			font-weight: normal;
+			color: #626262;
+			background: #ffffff;
+			border: 1px solid #626262;
 		}
 	}
 }
 
+footer {
+	margin-top: 1363px;
+	margin-left: auto;
+	margin-right: auto;
+	background: #f0f0f0;
+	padding: 38px 0px;
+
+	.footer-copyright {
+		float: left;
+		margin-left: 150px;
+		a {
+			margin-right: 12px;
+			font-weight: normal;
+			font-size: 14px;
+			line-height: 24px;
+			color: #000000;
+			text-decoration: none;
+
+		}
+	}
+
+	.footer-social {
+		float: right;
+		span {
+			font-weight: normal;
+			font-size: 14px;
+			line-height: 24px;
+			color: #000000;
+			text-decoration: none;
+		}
+
+		a {
+			font-size: 0;
+		}
+
+		.social-btn-fb {
+			background: url("../img/fb.png") no-repeat center;
+		}
+
+		.social-btn-tw {
+			background: url("../img/tw.png") no-repeat center;
+		}
+
+		.social-btn-inst {
+			background: url("../img/inst.png") no-repeat center;
+		}
+	}
+}
 .container {
-	width: 1061px;
+	width: 900px;
 	margin-left: auto;
 	margin-right: auto;
 }
