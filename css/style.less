@@ -1,3 +1,5 @@
+@black: #000;
+
 body {
 	font-family: 'Playfair Display', serif;
 	width: 1200px;
@@ -8,12 +10,13 @@ body {
 	.header-logo {
 		float: left;
 		margin-top: 68px;
+		
 		span {
 			font-family: 'Inconsolata', monospace;
 			font-weight: normal;
 			font-size: 30px;
 			line-height: 24px;
-			color: #000;
+			color: @black;
 			text-transform: uppercase;
 			letter-spacing: 6px;
 		}
@@ -63,23 +66,9 @@ main {
 		margin-left: auto;
 		margin-right: auto;
 
-		.post-category { /*Похоже на post-comment*/
+		.post-category {
 			display: inline-block;
-			margin-top: 92px;
-			font-family: 'Ubuntu', sans-serif;
-			font-size: 14px;
-			font-weight: lighter;
-			color: #b4ad9e;
-			text-transform: uppercase;
-			
-		}
-
-		h2 {
-			margin: 0px;
-			margin-top: 17px;
-			font-size: 30px;
-			font-weight: normal;
-			color: #626262;
+			margin-top: 92px;			
 		}
 
 		p {
@@ -90,14 +79,6 @@ main {
 			font-weight: normal;
 			line-height: 24px;
 			color: #626262;
-		}
-
-		.post-comment {
-			font-family: 'Ubuntu', sans-serif;
-			font-size: 14px;
-			font-weight: lighter;
-			color: #b4ad9e;
-			text-transform: uppercase;
 		}
 	}
 
@@ -122,19 +103,6 @@ main {
 			.post-category {
 				display: inline-block;
 				margin-top: 25px;
-				font-family: 'Ubuntu', sans-serif;
-				font-size: 14px;
-				font-weight: lighter;
-				color: #b4ad9e;
-				text-transform: uppercase;
-			}
-
-			h2 {
-				margin: 0px;
-				margin-top: 17px;
-				font-size: 30px;
-				font-weight: normal;
-				color: #626262;
 			}
 
 			p {
@@ -146,14 +114,6 @@ main {
 				line-height: 24px;
 				color: #626262;
 			}
-
-			.post-comment {
-				font-family: 'Ubuntu', sans-serif;
-				font-size: 14px;
-				font-weight: lighter;
-				color: #b4ad9e;
-				text-transform: uppercase;
-			}
 		}
 	}
 
@@ -162,10 +122,8 @@ main {
 		background: #f0f0f0;
 		text-align: center;
 		padding: 41px 124px 75px;
+		
 		h2 {
-			font-size: 30px;
-			font-weight: normal;
-			color: #333;
 			letter-spacing: 1px;
 		}
 
@@ -210,14 +168,6 @@ main {
 				font-weight: lighter;
 				color: #b4ad9e;
 				text-transform: uppercase;
-			}
-
-			h2 {
-				margin: 0px;
-				margin-top: 17px;
-				font-size: 30px;
-				font-weight: normal;
-				color: #626262;
 			}
 
 			p {
@@ -266,7 +216,7 @@ footer {
 			font-weight: normal;
 			font-size: 14px;
 			line-height: 24px;
-			color: #000000;
+			color: @black;
 			text-decoration: none;
 
 		}
@@ -299,6 +249,7 @@ footer {
 		}
 	}
 }
+
 .container {
 	width: 900px;
 	margin-left: auto;
@@ -309,4 +260,20 @@ footer {
   content: "";
   display: table;
   clear: both;
+}
+
+h2 {
+	margin: 0px;
+	margin-top: 17px;
+	font-size: 30px;
+	font-weight: normal;
+	color: #626262;
+}
+
+.post-comment {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 14px;
+	font-weight: lighter;
+	color: #b4ad9e;
+	text-transform: uppercase;
 }
