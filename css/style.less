@@ -1,4 +1,10 @@
-@black: #000;
+@p_a: #626262;
+@black: #000000;
+@grey_bg: #f0f0f0;
+@category_copy: #b4ad9e;
+@white: #ffffff;
+
+@font-size: 14px;
 
 body {
 	font-family: 'Playfair Display', serif;
@@ -10,11 +16,11 @@ body {
 	.header-logo {
 		float: left;
 		margin-top: 68px;
-		
+
 		span {
 			font-family: 'Inconsolata', monospace;
 			font-weight: normal;
-			font-size: 30px;
+			font-size: @font-size+16;
 			line-height: 24px;
 			color: @black;
 			text-transform: uppercase;
@@ -30,10 +36,10 @@ body {
 				display: inline;
 				margin-left: 89px;
 				a {
-					font-size: 14px;
+					font-size: @font-size;
 					line-height: 24px;
 					font-weight: normal;
-					color: #626262;
+					color: @p_a;
 					text-decoration: none;
 					text-transform: uppercase;
 
@@ -75,10 +81,10 @@ main {
 			margin: 0px;
 			margin-top: 27px;
 			margin-bottom: 41px;
-			font-size: 14px;
+			font-size: @font-size;
 			font-weight: normal;
 			line-height: 24px;
-			color: #626262;
+			color: @p_a;
 		}
 	}
 
@@ -109,17 +115,17 @@ main {
 				margin: 0px;
 				margin-top: 27px;
 				margin-bottom: 41px;
-				font-size: 14px;
+				font-size: @font-size;
 				font-weight: normal;
 				line-height: 24px;
-				color: #626262;
+				color: @p_a;
 			}
 		}
 	}
 
 	.feedback {
 		margin-top: -11px;
-		background: #f0f0f0;
+		background: @grey_bg;
 		text-align: center;
 		padding: 41px 124px 75px;
 		
@@ -130,15 +136,15 @@ main {
 		input {
 			width: 400px;
 			margin-top: 49px;
-			background: #f0f0f0 url("../img/send.png") no-repeat 372px;
-			font-size: 14px;
+			background: @grey_bg url("../img/send.png") no-repeat 372px;
+			font-size: @font-size;
 			line-height: 24px;
 			font-weight: normal;
 			border: none;
-			border-bottom: 1px solid black;
+			border-bottom: 1px solid @black;
 			padding-bottom: 8px;
 			padding-left: 6px;
-			color: #626262; /*Почему то не работает!!!*/
+			color: @p_a; /*Почему то не работает!!!*/
 		}
 	}
 
@@ -164,9 +170,9 @@ main {
 				display: inline-block;
 				margin-top: 25px;
 				font-family: 'Ubuntu', sans-serif;
-				font-size: 14px;
+				font-size: @font-size;
 				font-weight: lighter;
-				color: #b4ad9e;
+				color: @category_copy;
 				text-transform: uppercase;
 			}
 
@@ -174,10 +180,10 @@ main {
 				margin: 0px;
 				margin-top: 27px;
 				margin-bottom: 41px;
-				font-size: 14px;
+				font-size: @font-size;
 				font-weight: normal;
 				line-height: 24px;
-				color: #626262;
+				color: @p_a;
 			}
 		}
 
@@ -186,17 +192,17 @@ main {
 			margin-left: auto;
 			margin-right: auto;
 			padding: 17px 33px;
-			font-size: 20px;
+			font-size: @font-size+6;
 			line-height: 24px;
 			font-weight: normal;
-			color: #626262;
-			background: #ffffff;
-			border: 1px solid #626262;
+			color: @p_a;
+			background: @white;
+			border: 1px solid @p_a;
 		}
 
 		button:hover {
-			background: #626262;
-			color: #ffffff;
+			background: @p_a;
+			color: @white;
 		}
 	}
 }
@@ -205,7 +211,7 @@ footer {
 	margin-top: 122px;
 	margin-left: auto;
 	margin-right: auto;
-	background: #f0f0f0;
+	background: @grey_bg;
 	padding: 38px 0px;
 
 	.footer-copyright {
@@ -214,11 +220,10 @@ footer {
 		a {
 			margin-right: 12px;
 			font-weight: normal;
-			font-size: 14px;
+			font-size: @font-size;
 			line-height: 24px;
 			color: @black;
 			text-decoration: none;
-
 		}
 	}
 
@@ -265,15 +270,15 @@ footer {
 h2 {
 	margin: 0px;
 	margin-top: 17px;
-	font-size: 30px;
+	font-size: @font-size+16;
 	font-weight: normal;
-	color: #626262;
+	color: @p_a;
 }
 
 .post-comment {
 	font-family: 'Ubuntu', sans-serif;
-	font-size: 14px;
+	font-size: @font-size;
 	font-weight: lighter;
-	color: #b4ad9e;
+	color: @category_copy;
 	text-transform: uppercase;
 }
